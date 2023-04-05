@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgb(0,255,255,0.2)),url(images/touristBg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 40px;
+    position: absolute;
+    top:4%;
+    left:10%;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+.heading{
+    text-align: center;
+    color: white;
+    padding-top: 160px;
+}
+.heading h1{
+    font-size: 50px;
+}
+.heading p{
+    font-size: 25px;
+    font-style: italic;
+}
