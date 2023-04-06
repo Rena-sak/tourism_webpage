@@ -39,11 +39,14 @@
     display: inline-block;
     margin: 0 10px;
     padding: 10px;
+    border-radius: 25px;
+    background: transparent;
     color: white;
     border: 2px solid white;
     transition:  color 0.5s;
     z-index: 1;
     position: relative;
+    overflow: hidden;
 }
 .heading-btn a span{
     width: 0;
@@ -62,6 +65,7 @@
     color: black;
 }
 #navbar{
+    background: rgba(7, 97, 97, 0.6);
     width: 250px;
     height: 100vh;
     position: fixed;
@@ -79,6 +83,9 @@ nav ul li a{
     color: white;
     font-size: 25px;
 }
+nav ul li a:hover{
+    color: black;
+}
 #menuBtn{
     width: 40px;
     height: 45px;
@@ -89,7 +96,7 @@ nav ul li a{
     border-radius: 3px;
     z-index: 3;
     cursor: pointer;
-    background-color: rgba(0,255,255,0.6);
+    background-color: rgba(12, 172, 172, 0.6);
 }
 #menuBtn img{
     width: 20px;
@@ -333,5 +340,69 @@ hr{
 @media screen and (max-width: 770px){
     .testimonial-col{
         flex-basis:100%;
+    }
+}
+
+/* footer */
+
+#footer{
+    width: 100%;
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+.footer-row{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    line-height: 35px;
+}
+.footer-left .fa , .footer-right .fa{
+    font-size: 20px;
+    color: #009688;
+    margin: 10px;
+}
+.sns{
+    text-align: center;
+}
+.sns .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height:40px;
+    border: 1px solid #009688;
+    margin: 40px 5px 0;
+    color: #009688;
+    cursor: pointer;
+    transition: 1s;
+}
+.sns .fa:hover{
+    background: #009688;
+    color: white;
+    transform: translateY(-7px);
+}
+.sns p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 770px){
+    .footer-left .footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
     }
 }
