@@ -103,6 +103,9 @@ nav ul li a{
         display: block;
         margin: 20px auto;
     }
+    .heading p{
+        font-size:32px;
+    }
 }
 
 /* features */
@@ -263,4 +266,20 @@ hr{
 .single-places:hover .places-desc{
     bottom: 30%;
     opacity: 1;
+}
+@media screen and (max-width: 770px){
+    .single-places{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .places-desc p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .style-single:hover .style-desc{
+        bottom: 25% !important;
+        
+    }
 }
