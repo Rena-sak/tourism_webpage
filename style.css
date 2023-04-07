@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 #home{
     background: linear-gradient(rgba(0,0,0,0.5),rgb(0,255,255,0.4)),url(images/touristBg.jpg);
     background-size: cover;
